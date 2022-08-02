@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Basic Survey Template</h1>
+    <p id="description">a cute lil survey project </p>
+    <form id="survey-form">
+      <label id="name-label" >Name: <input type="text" id="name" placeholder="Jane Doe" required />
+      </label>
+      <label id="email-label">Email: <input id="email" type="email" placeholder="JaneD@email.com" required />
+      </label>
+      <label id="number-label"> Age(optional)
+        <input type="number" id="number" min="13" max="120" placeholder="18" />
+      </label>
+      <label>
+        Are these options?
+        <select id="dropdown">
+          <option>Yes</option>
+          <option>No</option>
+          <option>I don't understand</option>
+        </select>
+        </label>
+         Are you feeling nervous:
+        <label>
+          <input type="radio" name="gaga" name="yeah" value="yeah"
+          class="inline" /> Yeah
+        </label>
+        <label>
+          <input type="radio" name="gaga" name="no" value="no"
+          class="inline" /> No?
+        </label>
+        <label> Check some things you like: 
+          <input type="checkbox" value="cat"
+          class="inline" /> Cats
+        </label>
+        <input type="checkbox" value="dog"
+        class="inline" /> Dogs
+        <input type="checkbox" value="noodles" class="inline" /> Instant Noodles
+        <label>Any last thoughts?
+          <textarea name="thoughts" rows="3" col="30" placeholder="Head empty..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
